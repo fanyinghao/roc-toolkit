@@ -29,11 +29,11 @@ jobs:
         include:
           - macos-arch: arm64
             macos-version: 15
-            script: standard-build
+            script: build-3rdparty
 
           - macos-arch: arm64
             macos-version: 14
-            script: standard-build
+            script: build-3rdparty
 
     runs-on: macos-${{ matrix.macos-version }}
 
